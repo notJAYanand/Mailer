@@ -1,0 +1,105 @@
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/1306cba811.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section>
+
+    <div class="row justify-content-center">
+      <!-- <div class="col-12" style="
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 130px;
+"> -->
+    <div class="col-lg-4 col-md-6 col-sm-6 " style="position:absolute;
+    top:100px;">
+        <!--Sidebar content-->
+        <form action="/login" method="POST">
+          <h1 class="h3 mb-3 fw-normal" style="position:absolute;
+          left:30%;">Please Login</h1>
+          <div class="form-floating" style="
+          padding-top: 60px;
+    padding-right: 28px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+">
+            <input name="username" class="form-control" id="floatingInput" placeholder="Username">
+
+          </div>
+
+          <div class="form-floating" style="
+    padding-right: 28px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+">
+            <input name="password" type="password" class="form-control" id="floatingPassword" placeholder="Password">
+
+          </div>
+
+          <div class="checkbox mb-3" style="
+    padding-left: 50px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+">
+            <label>
+              <input type="checkbox" value="remember-me"> Remember me
+            </label>
+          </div>
+
+
+              <div class="row justify-content-center">
+                <div class="col-6 col-md-8 col-sm-6 align-self-center">
+                <p><a href="/signup" >Dont have an account? click here!</a></p>
+                </div>
+                <div class="col-3 col-md-3">
+                  <button type="submit" class="btn btn-primary">Login</button>
+                </div>
+              </div>
+          <!-- this is a horizontal line -->
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-4 col-md-4 col-sm-4">
+                <hr class="hr-light">
+              </div>
+              <p>or</p>
+              <div class="col-lg-4 col-md-4 col-sm-4">
+                <hr class="hr-light">
+              </div>
+            </div>
+          </div>
+          <a href="/auth/google" style="position:absolute;
+          left:29%;">
+            <button type="button" class="btn btn-light" style="align-centre:true;margin-left: 0px;padding-left: 12px;"><i class="fab fa-google" aria-hidden="true"></i> Sign In With Google</button>
+          </a>
+
+        </form>
+
+      </div>
+      <!-- <div class="col-6 img-style">
+
+        <img src="image.jpg" alt="image" style="width:120%;height:auto;">
+      </div> -->
+    </div>
+
+  <link type="text/css" id="dark-mode" rel="stylesheet" href="">
+  <style type="text/css" id="dark-mode-custom-style"></style>
+
+
+
+</section>
+
+
+
+</body>
+
+</html>

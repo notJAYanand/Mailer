@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <title>Create</title>
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="gradient.css">
+</head>
+
+<body>
+
+  <section>
+      <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark" style="padding-left: 10px">
+        <a class="navbar-brand" href="#">Mailer</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="/main">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="/history">History</a>
+      <a class="nav-item nav-link" href="/create">Compose</a>
+      <a href="/logout" style="position:absolute;
+      right:10px;
+      bottom:10px;">
+        <button type="button" class="btn btn-outline-warning">Logout
+        </button>
+      </a>
+    </div>
+
+        </div>
+      </nav>
+    <div class="row justify-content-center">
+
+      <div class="col-lg-4 col-md-6 col-sm-6 " style="
+      position:absolute;
+      top:100px;">
+
+        <form action="/create" method="POST">
+          <div>
+            <div class="input-group mb-3" style="margin-bottom: 10px;">
+              <span class="input-group-text" id="basic-addon1">To</span>
+
+              <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">CC</span>
+
+              <input type="text" class="form-control" placeholder="CC" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">Subject</span>
+
+              <input name="subject" type="text" class="form-control" placeholder="Subject" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">Schedule</span>
+
+              <select name="schedule" class="form-select" aria-label="Default select example">
+                <option selected="">Select Schedule</option>
+                <option name="recurring" value="Recurring">Recurring</option>
+                <option name="weekly" value="Weekly">Weekly</option>
+                <option name="monthly" value="Monthly">Monthly</option>
+                <option name="yearly" value="Yearly">Yearly</option>
+
+              </select>
+            </div>
+
+            <div class="input-group">
+              <span class="input-group-text">Body</span>
+              <textarea class="form-control" aria-label="With textarea" style="margin-top: 0px; margin-bottom: 0px; height: 164px;"></textarea>
+
+            </div>
+            <div>
+              <button type="submit" class="btn btn-secondary" style="position: absolute;
+              right:15px;
+              margin-top: 10px;
+              ">Send</button>
+            </div>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+
+</body>
+
+</html>
